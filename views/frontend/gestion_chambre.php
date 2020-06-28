@@ -15,11 +15,15 @@
 <div class="container h-75">
     <div class="row  h-100 justify-content-center align-items-center">
         <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" id="forms" method="post" novalidate >
-            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/gestion_etudiant" style="color:white">Gestion Etudiant</a>
-            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/gestion_chambre" style="color:white">Gestion Chambre</a>
+            <h3> Bienvenue à la Page de Gestion des chambre</h3>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/list_chambre" style="color:white">LISTE CHAMBRE</a>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/saveroom" style="color:white">ENREGISTRER CHAMBRE</a>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/Batiment" style="color:white">ENREGISTRER BATIMENT</a>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/index" style="color:white">PAGE ACCUEIL</a>
         </form>
     </div>
 </div>
+
 <script src="jquery-3.5.1.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

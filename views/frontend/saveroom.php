@@ -11,26 +11,54 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-  
+  <div class="row justifer-content-center p-2 col-lg-12">
+      <nav class="navbar navbar-expand-sm bg-light  w-100">
+          <!-- Links -->
+          <ul class="navbar-nav w-100 justify-content-between ml-4 mr-4">
+              <li class="nav-item">
+                  <a class="btn bg-secondary w-75 mb-2 ml-3" name="btn" href="<?=BASE_URL?>/security/gestion_chambre" style="color:white">RETOUR</a>
+              </li>
+          </ul>
+
+      </nav>
+  </div>
+
 <div class="container h-75">
   <div class="row  h-100 justify-content-center align-items-center">
-   <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" id="forms" method="post" novalidate >
+   <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" action='<?=BASE_URL?>/security/addRoom' id="forms" method="post" novalidate >
        <div class="container p-2 bg-secondary  text-white col-md-12">
        <h3 style="text-align:center; color:'bg-secondary'">Formulaire d'enregistrement</h3>    
        </div><br>
 <div class="input-group">
    <select name="class">
     <option disabled="disabled" selected="selected">N° Batiment</option>
-     <option>Batiment 1</option>
-     <option>Batiment 2</option>
-     <option>Batiment 3</option>
+       <?php
+       function showBatiment(){
+        $pdo=Manager::getConnexion();
+        $req=$pdo->prepare('SELECT * FROM  batiment');
+        $req->execute();
+          return $req;
+    }
+
+       foreach (showBatiment() as $com) {
+           // on affiche les informations de l'enregistrement en cours
+           echo '<option value="'.$com['numBatiment'].'">'.$com['numBatiment'].'</option>';
+
+       }
+
+       ?>
+
+
+
    </select>
+
    </div>
 <div class="input-group">
-   <input class="input--style-1" type="text" placeholder="N° Chambre" name="name">
+   <input class="input--style-1" type="text" placeholder="N° Chambre" name=" numchamb">
+
  </div>
     <div class="input-group">
-    <select name="class">
+    <select name="typechamb">
     <option disabled="disabled" selected="selected">Type</option>
      <option>individuel</option>
      <option>A deux</option>

@@ -1,6 +1,6 @@
 <?php
 class Student implements IStudent {
-    private $matricule;
+    private $id;
     private $nom;
     private $prenom;
     private $email;
@@ -14,7 +14,7 @@ class Student implements IStudent {
         }
     }
     public function initialize($tab){
-        $this->matricule= $tab['matricule'];
+        $this->id= $tab['id'];
         $this->nom= $tab['nom'];
         $this->prenom= $tab['prenom'];
         $this->email= $tab['email'];

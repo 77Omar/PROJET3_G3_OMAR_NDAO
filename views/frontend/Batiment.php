@@ -11,10 +11,21 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+  <div class="row justifer-content-center p-2 col-lg-12">
+      <nav class="navbar navbar-expand-sm bg-light  w-100">
+          <!-- Links -->
+          <ul class="navbar-nav w-100 justify-content-between ml-4 mr-4">
+              <li class="nav-item">
+                  <a class="btn bg-secondary w-75 mb-2 ml-3" name="btn" href="<?=BASE_URL?>/security/gestion_chambre" style="color:white">RETOUR</a>
+              </li>
+          </ul>
+
+      </nav>
+  </div>
   
 <div class="container h-75">
   <div class="row  h-100 justify-content-center align-items-center">
-   <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" id="forms" method="post" novalidate >
+   <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" action='<?=BASE_URL?>/security/addBatiment'id="forms" method="post" novalidate >
        <div class="container p-2 bg-secondary  text-white col-md-12">
        <h3 style="text-align:center; color:'bg-secondary'">Formulaire d'enregistrement</h3>    
        </div><br>
@@ -25,7 +36,7 @@
   <div class="row row-space">
     </div>
     
-   <button class="btn bg-secondary w-100 mb-3" name="btn"  id='submit' type="submit" style="color:white">Connexion</button>
+   <button class="btn bg-secondary w-100 mb-3" name="btn"  id='submit' type="submit" style="color:white">Enregistrer</button>
    </form>
   </div>
   </div>

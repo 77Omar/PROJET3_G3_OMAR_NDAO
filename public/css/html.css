@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+form{
+    width: 35%;
+    position: relative;
+    top:10px;
+}
+.form-group{
+    margin-bottom: 5px; 
+    padding-bottom: 10px;
+}
+.form-group{
+    margin-bottom: 5px; 
+    padding-bottom: 10px;
+    position: relative;
+    top: 40px;
+
+}
+
+.form-group label{
+    color: #777;
+    display: block; 
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin:auto;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.rounded-circle{
+    border: 2px solid darkturquoise;
+}
+label h6{
+    color: #31ADC8;  
+}
+label p{
+    color: #31ADC8;  
+}
+.bloc{
+height: 60em;
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+}
+
+/* Sticky Footer Classes */
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background:  #C4C4C4;
+  background:linear-gradient(180deg, #C4C4C4 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+}
+
+
+.card-signin .card-body {
+  /*height:45rem;*/
+  background-color: #C4C4C4;
+  text-align: center;
+  font-size: 25px;
+}
+.blok{
+    height: 60em;
+    background: linear-gradient(180deg, #C4C4C4C4 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+    }
+
+.fichier{
+    width: 46%;
+    height: 31px;
+    border-radius: 10px;
+    float: left;
+    width: 22%;
+    height: 36px;
+    border-radius: 10px;
+    float: right;
+    background-color: #31ADC8;
+    margin-top: 4%;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+#scrollZone{
+    max-height: 351px;
+    overflow: scroll;
+}
+.connection {
+    width: 18%;
+    height: 39px;
+    border-radius: 10px;
+    float: left;
+    background-color: #31ADC8;
+    margin-top: 7%;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: 2px solid #31ADC8;
+}
+

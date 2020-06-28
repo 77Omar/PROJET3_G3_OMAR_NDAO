@@ -15,8 +15,10 @@
 <div class="container h-75">
     <div class="row  h-100 justify-content-center align-items-center">
         <form class="needs-validation  p-3 w-50 bg-light p-5 shadow rounded" id="forms" method="post" novalidate >
-            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/gestion_etudiant" style="color:white">Gestion Etudiant</a>
-            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/gestion_chambre" style="color:white">Gestion Chambre</a>
+              <h3> Bienvenue a la Page de Gestion des Etudiants</h3>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/list_etudiant" style="color:white">LISTER ETUDIANT</a>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/save_etudiant" style="color:white">ENREGISTRER ETUDIANT</a>
+            <a class="btn bg-secondary w-75 mb-4 ml-5" name="btn" href="<?=BASE_URL?>/security/index" style="color:white">PAGE ACCUEIL</a>
         </form>
     </div>
 </div>

@@ -1,21 +1,22 @@
 <?php
 abstract class Manager implements IDao{
     //Connexion est Fermée
-    private $pdo=null;
+    static $pdo=null;
     protected $tableName;
     protected $className;
 
-    private function getConnexion(){
+    static function getConnexion(){
         //Connexion est fermée
-        if($this->pdo==null){
+       // if($this->pdo==null){
             try{
-                $this->pdo = new PDO("mysql:host=localhost;dbname=PROJET3_POO","root","");
-                $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
+                self::$pdo = new PDO("mysql:host=localhost;dbname=poo-mvc","root","");
+                self::$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
+                return self::$pdo;
             }catch(PDOException $ex){
                 die("Erreur de Connexion");
             }
 
-        }
+       // }
 
     }
 
@@ -51,24 +52,21 @@ abstract class Manager implements IDao{
     public function findAll(){
         $sql="select * from $this->tableName";
         $data=$this->executeSelect($sql);
-        var_dump($data);
     }
     public function findById($id){
-        $sql="select * from $this->tableName where id=$id ";
+        $sql="select * from $this->tableName where id=$id";
         $data=$this->executeSelect($sql);
         return count($data)==1?$data[0]:$data;
 
     }
 
+    public function update($obj){
 
-    public function delete($id){
-        $sql="delete from $this->tableName where id=$id";
-        return $this->executeUpdate($sql)!=0;
     }
-
-
-
-
+    public function add($obj){
+        $req = "";
+        return $this->executeUpdate($req)!=0;
+    }
 
     //Connexion
     //FermerConnexion

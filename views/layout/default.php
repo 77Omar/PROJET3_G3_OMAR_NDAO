@@ -11,26 +11,9 @@
     <link rel="stylesheet" href="<?=BASE_URL?>/public/css/style.css">
   </head>
   <body>
-  <div class="row justifer-content-center p-2 col-lg-12">
-    <nav class="navbar navbar-expand-sm bg-light  w-100">
-  <!-- Links -->
-  <ul class="navbar-nav w-100 justify-content-between ml-4 mr-4">
-    <li class="nav-item">
-      <a class="nav-link" href="#">LISTE CHAMBRE</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">ENREGISTREMENT CHAMBRE</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">AJOUTER BATIMENT</a>
-    </li>
-    
-  </ul>
-
-</nav>
 </div>
 <!---->
-
+  <?php echo  $content_for_layout?>
 <!---->
  <script src="../frontend/jquery-3.5.1.js"></script>
 
